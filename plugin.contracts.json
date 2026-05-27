@@ -1,0 +1,155 @@
+{
+  "version": "1",
+  "contracts": [
+    {
+      "kind": "module",
+      "type": "auth0.provider",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.ProviderConfig"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_auth_provider_describe",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.AuthProviderDescribeConfig",
+      "input": "workflow.plugins.auth0.v1.AuthProviderDescribeInput",
+      "output": "workflow.plugins.auth0.v1.AuthProviderDescribeOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_user_create",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_user_get",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_user_list",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_user_update",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_user_delete",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_role_create",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_role_list",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_role_assign_users",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_client_create",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_client_get",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_client_list",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_client_update",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_client_delete",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_connection_list",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_organization_create",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_organization_get",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.auth0_organization_list",
+      "mode": "strict",
+      "config": "workflow.plugins.auth0.v1.Auth0StepConfig",
+      "input": "workflow.plugins.auth0.v1.Auth0StepInput",
+      "output": "workflow.plugins.auth0.v1.Auth0StepOutput"
+    }
+  ]
+}

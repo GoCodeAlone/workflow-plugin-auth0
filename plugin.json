@@ -1,0 +1,61 @@
+{
+  "name": "workflow-plugin-auth0",
+  "version": "0.1.0",
+  "description": "Auth0 identity and access management provider plugin",
+  "author": "GoCodeAlone",
+  "license": "MIT",
+  "type": "external",
+  "tier": "community",
+  "private": false,
+  "minEngineVersion": "0.64.0",
+  "keywords": ["auth0", "identity", "iam", "sso", "oidc", "rbac"],
+  "homepage": "https://github.com/GoCodeAlone/workflow-plugin-auth0",
+  "repository": "https://github.com/GoCodeAlone/workflow-plugin-auth0",
+  "capabilities": {
+    "configProvider": false,
+    "moduleTypes": ["auth0.provider"],
+    "stepTypes": [
+      "step.auth0_auth_provider_describe",
+      "step.auth0_user_create",
+      "step.auth0_user_get",
+      "step.auth0_user_list",
+      "step.auth0_user_update",
+      "step.auth0_user_delete",
+      "step.auth0_role_create",
+      "step.auth0_role_list",
+      "step.auth0_role_assign_users",
+      "step.auth0_client_create",
+      "step.auth0_client_get",
+      "step.auth0_client_list",
+      "step.auth0_client_update",
+      "step.auth0_client_delete",
+      "step.auth0_connection_list",
+      "step.auth0_organization_create",
+      "step.auth0_organization_get",
+      "step.auth0_organization_list"
+    ],
+    "triggerTypes": []
+  },
+  "downloads": [
+    {
+      "os": "linux",
+      "arch": "amd64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-auth0/releases/download/v0.1.0/workflow-plugin-auth0-linux-amd64.tar.gz"
+    },
+    {
+      "os": "linux",
+      "arch": "arm64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-auth0/releases/download/v0.1.0/workflow-plugin-auth0-linux-arm64.tar.gz"
+    },
+    {
+      "os": "darwin",
+      "arch": "amd64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-auth0/releases/download/v0.1.0/workflow-plugin-auth0-darwin-amd64.tar.gz"
+    },
+    {
+      "os": "darwin",
+      "arch": "arm64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-auth0/releases/download/v0.1.0/workflow-plugin-auth0-darwin-arm64.tar.gz"
+    }
+  ]
+}
