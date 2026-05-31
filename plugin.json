@@ -8,12 +8,41 @@
   "tier": "community",
   "private": false,
   "minEngineVersion": "0.64.0",
-  "keywords": ["auth0", "identity", "iam", "sso", "oidc", "rbac"],
+  "required_secrets": [
+    {
+      "name": "AUTH0_DOMAIN",
+      "sensitive": false,
+      "description": "Auth0 tenant domain (e.g. example.us.auth0.com). Referenced as ${AUTH0_DOMAIN}.",
+      "prompt": "Auth0 domain"
+    },
+    {
+      "name": "AUTH0_CLIENT_ID",
+      "sensitive": false,
+      "description": "Auth0 M2M application client ID. Referenced as ${AUTH0_CLIENT_ID}.",
+      "prompt": "Auth0 client ID"
+    },
+    {
+      "name": "AUTH0_CLIENT_SECRET",
+      "sensitive": true,
+      "description": "Auth0 M2M application client secret (client-credentials path; static-token path uses a management token instead). Referenced as ${AUTH0_CLIENT_SECRET}.",
+      "prompt": "Auth0 client secret"
+    }
+  ],
+  "keywords": [
+    "auth0",
+    "identity",
+    "iam",
+    "sso",
+    "oidc",
+    "rbac"
+  ],
   "homepage": "https://github.com/GoCodeAlone/workflow-plugin-auth0",
   "repository": "https://github.com/GoCodeAlone/workflow-plugin-auth0",
   "capabilities": {
     "configProvider": false,
-    "moduleTypes": ["auth0.provider"],
+    "moduleTypes": [
+      "auth0.provider"
+    ],
     "stepTypes": [
       "step.auth0_auth_provider_describe",
       "step.auth0_user_create",
